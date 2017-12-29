@@ -4,17 +4,13 @@ Introduction
 In this project I am trying to accomplish the task of detecting objects in an image/video using TensorFlow and OpenCV.
 Object detection is not as simple as object classification. An object classification algorithm tries to categorize entire images into different classes whereas an object detection algorithm tries to identify the objects in an image and draw bounding boxes around them. We need much more powerful algorithm for object detection in the form of deep neural networks(R-CNN,Faster R-CNN etc).
 
-
-AIM
-
 One of the core challenges of machine learning and computer vision has been to identify and detect multiple objects accurately in a single image.In this project I am using the opensource TensorFlow Object detection framework built on top of TensorFlow. The TensorFlow model can detect many common objects with a good enough accuracy but it has the following limitations as well:
 •	Some objects are detected and labeled wrongly.
 •	There are not many objects that the model detects.
 
 I have trained the model on custom objects(soccer ball etc) and also extended the API to detect objects in a video game(GTA 5).
 
-
-#Implementation details
+Implementation details
 The TensorFlow object detection API  has many dependencies that need to be included for the API to work on.
 There are two versions of tensorflow that the API can run on:
 1.	Tensorflow-cpu
@@ -51,9 +47,6 @@ Step2:Hand labeling all the images using the labelImg annotation tool.
 In this step I select each image(from the 200 images) and draw bounding boxes around the soccer ball in each image.
 
  This annotation tool automatically generates a xml file for each image which is then converted into a csv format using .This is necessary because we need to convert the image files to the PASCAL VOC dataset format which in turn can be conveniently converted to TF records which the TF model accepts as input. 
-The record files are shown in the next page:
- 
-Note: Not able to show its contents because it wasn’t supported by any editor.
 
 We split the entire dataset of images into train and test folders(90% train and 10% test).Along with the record files train.record and test.record we give the train and test images as input to the TF model.
 We set the configuration file and allow the model to run. 
