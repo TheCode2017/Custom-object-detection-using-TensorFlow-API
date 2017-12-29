@@ -62,9 +62,13 @@ In order to make this work I had to write a code to grab my screen into a termin
 
   
 References
+
 1.https://github.com/tensorflow/models/tree/master/research/object_detection
+
 2.https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9
+
 3.https://www.tensorflow.org/get_started/
+
 4.https://pypi.python.org/pypi/grab-screen
 
 
