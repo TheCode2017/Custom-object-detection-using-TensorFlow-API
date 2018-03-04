@@ -1,6 +1,8 @@
 # Custom-object-detection-using-TensorFlow-API
 
 Introduction
+
+
 In this project I am trying to accomplish the task of detecting objects in an image/video using TensorFlow and OpenCV.
 Object detection is not as simple as object classification. An object classification algorithm tries to categorize entire images into different classes whereas an object detection algorithm tries to identify the objects in an image and draw bounding boxes around them. We need much more powerful algorithm for object detection in the form of deep neural networks(R-CNN,Faster R-CNN etc).
 
