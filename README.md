@@ -1,23 +1,28 @@
 # Custom-object-detection-using-TensorFlow-API
 
+Welcome to my pet project! This has been one of the toughest and most interesting projects I have worked on. Just read on to find out more!
+
 Introduction
 
 
 In this project I am trying to accomplish the task of detecting objects in an image/video using TensorFlow and OpenCV.
-Object detection is not as simple as object classification. An object classification algorithm tries to categorize entire images into different classes whereas an object detection algorithm tries to identify the objects in an image and draw bounding boxes around them. We need much more powerful algorithm for object detection in the form of deep neural networks(R-CNN,Faster R-CNN etc).
+Object detection is not as simple as object classification. An object classification algorithm tries to categorize entire images into different classes whereas an object detection algorithm tries to identify the objects in an image and draw bounding boxes around them. We need a much more powerful algorithm for detecting objects in a video in the form of deep neural networks(R-CNN,Faster R-CNN etc).
 
-One of the core challenges of machine learning and computer vision has been to identify and detect multiple objects accurately in a single image.In this project I am using the opensource TensorFlow Object detection framework built on top of TensorFlow. The TensorFlow model can detect many common objects with a good enough accuracy but it has the following limitations as well:
-•	Some objects are detected and labeled wrongly.
+One of the core challenges of machine learning and computer vision has been to identify and detect multiple objects accurately in a single image.In this project I am using the opensource TensorFlow Object detection framework built on top of TensorFlow. The TensorFlow model can detect many common objects with a good enough accuracy but it has some limitations as well:
+
+•	Some objects are detected and labeled wrongly(Maybe enough objects of that type were not trained).
 •	There are not many objects that the model detects.
 
 I have trained the model on custom objects(soccer ball etc) and also extended the API to detect objects in a video game(GTA 5).
 
-Implementation details
+Implementation details:
+
 The TensorFlow object detection API  has many dependencies that need to be included for the API to work on.
 There are two versions of tensorflow that the API can run on:
 1.	Tensorflow-cpu
 2.	Tensorflow-gpu
 Training on the tensorflow-gpu is much faster and can train large batches at once.It needs a powerful CUDA-enabled NVIDIA GPU (GTX 850m series or greater) 
+
 Lets take a look at the concepts one by one:
 1.	Tensorflow: Tensorflow is an open source software library that uses data flow graphs for numerical computation.Nodes in the graph represent mathematical operations and edges represent tensors.Tensors are n-dimensional arrays that is operated on by the nodes of the graph.
 2.	CUDA: A parallel computing platform developed by NVIDIA that allows users to use the capabilities of their powerful GPU’s for deep learning.It gives direct access to the GPU’s virtual instruction set for the execution of compute kernels.
