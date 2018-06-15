@@ -58,7 +58,7 @@ In this step I select each image(from the 200 images) and draw bounding boxes ar
 We split the entire dataset of images into train and test folders(90% train and 10% test).Along with the record files train.record and test.record we give the train and test images as input to the TF model.
 We set the configuration file and allow the model to run. 
 
- After the loss was reduced to less than 0.5 and allowing the model to run for about 10k steps I stopped the model. The model outputted a frozen inference graph(.pb file) , a checkpoint file and a .meta file for every 1000 steps
+ After the loss was reduced to less than 0.5 and allowing the model to run for about 10k steps I stopped the model. The model output a frozen inference graph(.pb file) , a checkpoint file and a .meta file for every 1000 steps
  
  
 
